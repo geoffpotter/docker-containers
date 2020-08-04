@@ -27,8 +27,9 @@ EXPOSE 21026
 # Fix a Debianism of the nobody's uid being 65534
 RUN usermod -u 99 nobody && \
 usermod -g 100 nobody && \
+apt-get update && \
 #add build tools
-apt install -y build-essential tcl git && \
+apt-get install -y build-essential tcl git && \
 #install Node
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - && \
 sudo apt install -y nodejs && \
