@@ -36,8 +36,8 @@ EXPOSE 21026
 
 # Fix a Debianism of the nobody's uid being 65534
 RUN \
-#usermod -u 99 nobody && \
-#usermod -g 100 nobody && \
+usermod -u 99 nobody && \
+usermod -g 100 nobody && \
 apt-get update && \
 #add build tools
 apt-get install -y build-essential tcl git && \
