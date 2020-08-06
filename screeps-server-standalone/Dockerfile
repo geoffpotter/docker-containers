@@ -17,7 +17,7 @@ COPY --from=0 /server /server
 
 #add our files
 COPY "docker-entry.sh" /
-
+RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/docker-entry.sh"]
 
 CMD ["run"]
