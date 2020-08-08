@@ -1,10 +1,13 @@
 #!/bin/bash
 set -e
 
+SETTINGS_FILE=/server/.screepssc
+
 cd /server
 echo test -f ".screepssc"
-if [ ! -f ".screepssc" ] then
-    echo "===== SETTING UP SCREEPS ====="
+ls -a
+if [ ! -f "$SETTINGS_FILE" ] then
+    echo "===== SETTINGS FILE MISSING, SETTING UP SCREEPS ====="
     yarn init -y
     yarn add screeps
     echo "$API_KEY" | npx screeps init
