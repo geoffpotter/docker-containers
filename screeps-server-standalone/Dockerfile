@@ -22,4 +22,4 @@ COPY "screeps-run.sh" /server/
 ENTRYPOINT ["/server/screeps-run.sh"]
 
 RUN usermod -u 99 nobody && \
-usermod -g 100 nobody && \
+usermod -g 100 nobody
