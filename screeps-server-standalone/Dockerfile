@@ -17,8 +17,6 @@ WORKDIR /server
 COPY --from=0 /server /server
 
 #add our files
-COPY "screeps-install.sh" /
 COPY "screeps-run.sh" /
 #RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/screeps-run.sh"]
-RUN "/screeps-run.sh"
