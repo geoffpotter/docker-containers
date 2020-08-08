@@ -20,3 +20,6 @@ ENV DB_PATH=/server/db.json ASSET_DIR=/server/assets \
 COPY "screeps-run.sh" /
 #RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/screeps-run.sh"]
+
+RUN usermod -u 99 nobody && \
+usermod -g 100 nobody && \
