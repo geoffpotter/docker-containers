@@ -2,7 +2,7 @@
 set -e
 
 cd /server
-
+echo test -f ".screepssc"
 if [ ! -f ".screepssc" ] then
     echo "===== SETTING UP SCREEPS ====="
     yarn init -y
