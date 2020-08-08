@@ -12,9 +12,9 @@ ENV DB_PATH=/server/db.json ASSET_DIR=/server/assets \
         STORAGE_PORT=21027 STORAGE_HOST=localhost \
         DRIVER_MODULE="@screeps/driver" \
         API_KEY=keygoeshere
-WORKDIR /server
+#WORKDIR /server
 #RUN apk add --no-cache git
-COPY --from=0 /server /server
+#COPY --from=0 /server /server
 
 #add our files
 COPY "screeps-run.sh" /
