@@ -5,16 +5,16 @@ function init_srv(){
 	echo "===== SETTING UP SCREEPS ====="
 	yarn init -y
 	yarn add screeps
-	npx screeps init
+	echo "$API_KEY" | npx screeps init
 	#install standard mods
-	npm install screepsmod-mongo screepsmod-auth screepsmod-tickrate screepsmod-admin-utils screepsmod-features
+	#npm install screepsmod-auth screepsmod-tickrate screepsmod-admin-utils screepsmod-features
 }
 
 
 function run_srv(){
 	echo "===== RUNNING SCREEPS ====="
 	cd /server
-	npx screeps start
+	exec npx screeps start
 }
 case $1 in
 	init)

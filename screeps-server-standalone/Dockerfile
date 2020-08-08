@@ -10,14 +10,15 @@ ENV DB_PATH=/server/db.json ASSET_DIR=/server/assets \
         MODFILE=/server/mods.json GAME_PORT=21025 \
         GAME_HOST=0.0.0.0 CLI_PORT=21026 CLI_HOST=0.0.0.0 \
         STORAGE_PORT=21027 STORAGE_HOST=localhost \
-        DRIVER_MODULE="@screeps/driver"
+        DRIVER_MODULE="@screeps/driver" \
+        API_KEY=keygoeshere
 WORKDIR /server
 #RUN apk add --no-cache git
 COPY --from=0 /server /server
 
 #add our files
 COPY "docker-entry.sh" /
-RUN chmod +x /entrypoint.sh
+#RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/docker-entry.sh"]
 
 CMD ["run"]
