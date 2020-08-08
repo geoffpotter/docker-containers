@@ -2,7 +2,7 @@
 set -e
 
 SETTINGS_FILE=/server/.screepssc
-
+echo "STARTING SERVER...."
 cd /server
 echo test -f ".screepssc"
 ls -a
