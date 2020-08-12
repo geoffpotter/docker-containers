@@ -1,6 +1,6 @@
 FROM node:10.16.3-stretch
 ENV SCREEPS_VERSION 4.1.7
-ENV PLUGINS "screepsmod-auth screepsmod-admin-utils screepsmod-features"
+ENV PLUGINS "screepsmod-auth screepsmod-admin-utils screepsmod-features @screeps/simplebot"
 
 #FROM node:10.16.3-stretch
 VOLUME /server
@@ -23,5 +23,5 @@ COPY "screeps-run.sh" /screeps-run.sh
 #RUN chmod +x /entrypoint.sh
 ENTRYPOINT /screeps-run.sh
 
-# RUN usermod -u 99 nobody && \
-# usermod -g 100 nobody
+RUN usermod -u 99 nobody && \
+usermod -g 100 nobody

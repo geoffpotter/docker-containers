@@ -23,5 +23,5 @@ COPY "screeps-run.sh" /screeps-run.sh
 #RUN chmod +x /entrypoint.sh
 ENTRYPOINT /screeps-run.sh
 
-# RUN usermod -u 99 nobody && \
-# usermod -g 100 nobody
+RUN usermod -u 99 nobody && \
+usermod -g 100 nobody
