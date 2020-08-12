@@ -1,5 +1,5 @@
 FROM node:10.16.3-stretch
-ENV SCREEPS_VERSION 4.0.4
+ENV SCREEPS_VERSION 4.1.7
 ENV PLUGINS "screepsmod-auth screepsmod-admin-utils screepsmod-features"
 
 #FROM node:10.16.3-stretch
