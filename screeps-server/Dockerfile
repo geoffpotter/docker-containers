@@ -20,7 +20,7 @@ WORKDIR /server
 WORKDIR /
 #add our files
 COPY "screeps-run.sh" /screeps-run.sh
-#RUN chmod +x /entrypoint.sh
+RUN chmod +x /screeps-run.sh
 ENTRYPOINT /screeps-run.sh
 
 RUN usermod -u 99 nobody && \
