@@ -7,7 +7,6 @@ ENV STORAGE_HOST=localhost STORAGE_PORT=21027
 VOLUME /server
 
 
-
 WORKDIR /server
 ENV DB_PATH=/server/db.json ASSET_DIR=/server/assets \
         MODFILE=/server/mods.json GAME_PORT=21025 \
@@ -23,5 +22,5 @@ COPY "screeps-run.sh" /screeps-run.sh
 RUN chmod +x /screeps-run.sh
 ENTRYPOINT /screeps-run.sh
 
-RUN usermod -u 99 nobody && \
-usermod -g 100 nobody
+#RUN usermod -u 99 nobody && \
+#usermod -g 100 nobody

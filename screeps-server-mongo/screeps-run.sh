@@ -3,6 +3,7 @@ set -e
 echo "STARTING SERVER...."
 SETTINGS_FILE=/server/.screepsrc
 
+
 cd /server
 
 if [ ! -f "$SETTINGS_FILE" ] 
