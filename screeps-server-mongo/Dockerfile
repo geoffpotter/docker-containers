@@ -1,6 +1,6 @@
 FROM node:10.16.3-stretch
 ENV SCREEPS_VERSION 4.1.11
-ENV PLUGINS "screepsmod-mongo screepsmod-auth screepsmod-admin-utils screepsmod-features @screeps/simplebot"
+ENV PLUGINS "screepsmod-auth screepsmod-admin-utils screepsmod-features @screeps/simplebot screeps-bot-tooangel screeps-bot-overmind screeps-bot-kasamibot screeps-bot-hivemind"
 ENV STORAGE_HOST=localhost STORAGE_PORT=21027
 
 #FROM node:10.16.3-stretch
