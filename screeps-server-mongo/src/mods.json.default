@@ -1,0 +1,16 @@
+{
+    "mods": [
+      "node_modules/screepsmod-mongo/index.js",
+      "node_modules/screepsmod-auth/index.js",
+      "node_modules/screepsmod-admin-utils/index.js",
+      "node_modules/screepsmod-features/index.js"
+    ],
+    "bots": {
+      "simplebot": "node_modules/@screeps/simplebot/src",
+      "tooangel": "node_modules/screeps-bot-tooangel/src",
+      "overmind": "node_modules/screeps-bot-overmind/src",
+      "kasamibot": "node_modules/screeps-bot-kasamibot/src",
+      "hivemind": "node_modules/screeps-bot-hivemind/src"
+  
+    }
+  }

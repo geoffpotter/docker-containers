@@ -1,0 +1,2 @@
+# .gitattributes in project root
+screeps-server-mongo/screeps-run.sh text eol=lf
